@@ -20,6 +20,10 @@ set -e
 
 case "$1" in
     configure)
+    cd /var/cache/se3_install/radius
+	chmod +x install_freeradius.sh
+	./install_freeradius.sh
+    
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
