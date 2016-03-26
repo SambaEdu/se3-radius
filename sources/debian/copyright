@@ -1,5 +1,5 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: se3-raduis
+Upstream-Name: se3-radius
 Source: <url://example.com>
 
 # If you want to use GPL v2 or later for the /debian/* files use 

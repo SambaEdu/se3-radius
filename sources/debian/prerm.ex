@@ -1,5 +1,5 @@
 #!/bin/sh
-# prerm script for se3-raduis
+# prerm script for se3-radius
 #
 # see: dh_installdeb(1)
 

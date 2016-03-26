@@ -1,5 +1,5 @@
 #!/bin/sh
-# postrm script for se3-raduis
+# postrm script for se3-radius
 #
 # see: dh_installdeb(1)
 
