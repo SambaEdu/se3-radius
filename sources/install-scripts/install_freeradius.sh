@@ -38,12 +38,15 @@ then
 	
 	# Détermination du masque de réseau au format 16 pour 255.255.0.0 ou 24 pour 255.255.255.0
 	mask_reseau=$(($(echo "$se3mask" | grep -o "255" | wc -l)*8))
-	
+else
+	echo "/etc/se3/config_l.cache.sh non trouvé"
+	echo "impossible de poursuivre"
+	exit 1
 fi
 																		
-apt-get update
-apt-get install -y freeradius freeradius-ldap
-		
+# apt-get update
+# apt-get install -y freeradius freeradius-ldap
+# 		
 
 echo "Etape 1 : Paramétrage du module ldap de Freeradius"
 
