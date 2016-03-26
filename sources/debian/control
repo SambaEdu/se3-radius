@@ -10,6 +10,6 @@ Homepage: <insert the upstream URL, if relevant>
 
 Package: se3-radius
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: se3 (>= 2.5), freeradius, freeradius-ldap
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
