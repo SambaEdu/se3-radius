@@ -2,27 +2,27 @@
 # Rédigé par Nicolas Aldegheri le 26/03/2016
 # Sous licence GNU
 
-echo "Ce script permet d'intégrer un serveur freeradius dans un réseau se3"
-echo "Deux configurations sont possibles :"
-echo "      - installer freeradius sur un serveur Debian Jessie dédié"
-echo "      - installer freeradius sur un se3 wheezy"
-echo "Si l'installation est réalisée sur un serveur Debian Jessié dédié, renseigner au début du script les variables en les adaptant à votre réseau"
-echo "Etes-vous sur de vouloir continuer ? o ou n ? :																				"
-read REPONSE
+#echo "Ce script permet d'intégrer un serveur freeradius dans un réseau se3"
+#echo "Deux configurations sont possibles :"
+#echo "      - installer freeradius sur un serveur Debian Jessie dédié"
+#echo "      - installer freeradius sur un se3 wheezy"
+#echo "Si l'installation est réalisée sur un serveur Debian Jessié dédié, renseigner au début du script les variables en les adaptant à votre réseau"
+#echo "Etes-vous sur de vouloir continuer ? o ou n ? :																				"
+#read REPONSE
 
-if [ "$REPONSE" != "o" ]
-then	
-	exit 0;
-fi
+#if [ "$REPONSE" != "o" ]
+#then	
+#	exit 0;
+#fi
 
 ############################################################################################################
 # Variables à compléter dans le cas où l'installation est réalisée sur un serveur Debian Jessie dédié
-ldap_server=""															# IP du se3
-ldap_port="389"															# Port du service ldap sur le se3, par défaut 389
-mask_reseau=""															# mettre 16 pour 255.255.0.0 ou 24 pour 255.255.255.0
-ldap_base_dn="ou=lyc-demo,ou=ac-versailles,ou=education,o=gouv,c=fr"	# Base DN de l'annuaire LDAP
-adminPw=""																# Mot de passe de l'admin de l'annuaire ldap du se3 : à récupérer via l'interface web "setup" du se3
-secret_borne_wifi=""													# Secret partagé entre les bornes wifi et le serveur Radius :
+#ldap_server=""															# IP du se3
+#ldap_port="389"															# Port du service ldap sur le se3, par défaut 389
+#mask_reseau=""															# mettre 16 pour 255.255.0.0 ou 24 pour 255.255.255.0
+#ldap_base_dn="ou=lyc-demo,ou=ac-versailles,ou=education,o=gouv,c=fr"	# Base DN de l'annuaire LDAP
+#adminPw=""																# Mot de passe de l'admin de l'annuaire ldap du se3 : à récupérer via l'interface web "setup" du se3
+#secret_borne_wifi=""													# Secret partagé entre les bornes wifi et le serveur Radius :
 																		# à renseigner à l'identique dans le paramétrage WPA2-Enterprise de toutes les bornes wifi du réseau pédagogique
 # Fin des variables à renseigner
 #############################################################################################################
