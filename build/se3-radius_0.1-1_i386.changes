@@ -1,0 +1,22 @@
+Format: 1.8
+Date: Wed, 23 Mar 2016 16:00:35 +0100
+Source: se3-radius
+Binary: se3-radius
+Architecture: i386
+Version: 0.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: Franck <franck.molle@gmail.com>
+Changed-By: Franck <franck.molle@gmail.com>
+Description: 
+ se3-radius - <insert up to 60 chars description>
+Changes: 
+ se3-radius (0.1-1) unstable; urgency=low
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1: 
+ 7b9db20a71e1c4e8185ff1756fc41822beffa6fa 5364 se3-radius_0.1-1_i386.deb
+Checksums-Sha256: 
+ 67f15708ebb38f7ebd8445a0a4baeb0f1838697e9b0112eb932007220249e78c 5364 se3-radius_0.1-1_i386.deb
+Files: 
+ a3c1898dbc83a251666b1bc85a68ba39 5364 unknown extra se3-radius_0.1-1_i386.deb
