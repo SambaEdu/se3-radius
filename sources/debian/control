@@ -9,7 +9,7 @@ Homepage: <insert the upstream URL, if relevant>
 #Vcs-Browser: http://git.debian.org/?p=collab-maint/se3-radius.git;a=summary
 
 Package: se3-radius
-Architecture: any
+Architecture: all
 Depends: se3 (>= 2.5), freeradius, freeradius-ldap
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Service freeradius pour SE3
+Service radius branché sur le ldap du SE3

@@ -106,10 +106,6 @@ dh_pysupport: This program is deprecated, you should use dh_python2 instead. Mig
 	find debian/se3-radius -perm -5 -type f \( -name '*.cmxs' \)  -print0 2>/dev/null | xargs -0r chmod 644
 	find debian/se3-radius/usr/lib/perl5 debian/se3-radius/usr/share/perl5 -type f -perm -5 -name '*.pm'  -print0 2>/dev/null | xargs -0r chmod a-X
 	find debian/se3-radius/usr/lib -type f -name '*.ali'  -print0 2>/dev/null | xargs -0r chmod uga-w
-   dh_strip
-   dh_makeshlibs
-	rm -f debian/se3-radius/DEBIAN/shlibs
-   dh_shlibdeps
    dh_installdeb
 	sed s/#DEBHELPER#// < debian/postinst > debian/se3-radius/DEBIAN/postinst
 	chown 0:0 debian/se3-radius/DEBIAN/postinst
@@ -128,7 +124,7 @@ dh_pysupport: This program is deprecated, you should use dh_python2 instead. Mig
 	chown 0:0 debian/se3-radius/DEBIAN/md5sums
    dh_builddeb
 	dpkg-deb --build debian/se3-radius ..
-dpkg-deb : construction du paquet « se3-radius » dans « ../se3-radius_0.1-1_i386.deb ».
+dpkg-deb : construction du paquet « se3-radius » dans « ../se3-radius_0.1-1_all.deb ».
  dpkg-genchanges -b >../se3-radius_0.1-1_i386.changes
 dpkg-genchanges: envoi d'un binaire - aucune inclusion de code source
  dpkg-source --after-build se3-radius-0.1

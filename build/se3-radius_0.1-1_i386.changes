@@ -2,7 +2,7 @@ Format: 1.8
 Date: Wed, 23 Mar 2016 16:00:35 +0100
 Source: se3-radius
 Binary: se3-radius
-Architecture: i386
+Architecture: all
 Version: 0.1-1
 Distribution: unstable
 Urgency: low
@@ -15,8 +15,8 @@ Changes:
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1: 
- 7b9db20a71e1c4e8185ff1756fc41822beffa6fa 5364 se3-radius_0.1-1_i386.deb
+ 5a1cd03469f42fa498e6f1baad730b7d4a5a4d56 5358 se3-radius_0.1-1_all.deb
 Checksums-Sha256: 
- 67f15708ebb38f7ebd8445a0a4baeb0f1838697e9b0112eb932007220249e78c 5364 se3-radius_0.1-1_i386.deb
+ 86fd8ae98546c1c62579dfa806c3a3458f2797db3d873b3478bf88bd0820b1c1 5358 se3-radius_0.1-1_all.deb
 Files: 
- a3c1898dbc83a251666b1bc85a68ba39 5364 unknown extra se3-radius_0.1-1_i386.deb
+ 612df651f302f03d662006e7c904825e 5358 unknown extra se3-radius_0.1-1_all.deb
